@@ -1,0 +1,77 @@
+\documentclass[10pt]{amsart}
+\usepackage{graphicx} 
+\usepackage{amsmath}
+\usepackage{pdflscape}
+\usepackage{tabularx}
+\usepackage{endnotes}
+\usepackage{gensymb}
+\usepackage{verbatimbox}
+\usepackage{float} % necessary for placement of figures
+\usepackage[style = authoryear, sorting = nyt, backend = biber]{biblatex}
+\addbibresource[location = local, type = file]{C:/Users/bloh356/Google Drive/Library/Library.bib}
+%\addbibresource[location = local, type = file]{/Users/bloh356/Google Drive/Library/Library.bib}
+
+\title{$O_{3}$ task}
+\author{Andrew Blohm}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Abstract}
+
+\section{Literature review}
+Ozone ($O_{3}$) negatively effects plant growth and physiology, and subsequently, yields, as it causes injury, reduces photosynthesis, and, decreases plant productivity \parencite{mishra:2013aa}. 
+
+There are two main approaches used to quantify the impact of ozone on crops: concentration based critical levels ($CLe_{c}$) (i.e., AOT40), which capture the relationship between the cumulative dose over a threshold on the outcome variable, and flux models, which model the flux of ozone through the stomatal pores to identify critical levels of ozone \parencite{mills:2007aa}. 
+A third, less used model, is the maximum permissible ozone concentration (MPOC)\parencite{mills:2007aa}.  
+
+The critical load and level concept, an effect-based approach to quantify the necessary level of reductions of atmospheric depositions, came about as a result of the Convention on Long-range Transboundary Air Pollution (LRTAP-Convention) \parencite{clrtap:2015aa}. 
+Critical levels are defined as the "ambient concentrations above which damage may occur" \parencite[I-5]{clrtap:2015aa}.
+"Critical loads and levels correspond to a maximum allowable exposure of a receptor to deposition or ambient concentration respectively" \parencite[I-5]{clrtap:2015aa}.
+Note: We could add more information here on the convention, organizations, monitoring, etc. 
+
+The $CLe_{c}$ approach uses the accumulated ozone above a threshold concentration for a certain time-window. 
+As a first step these studies identify the critical level of accumulated ozone above which, damage occurs \parencite{mills:2007aa}.
+One criticism of this type of model is that it does not take into account how much of the ozone actually enters the plant through the stomatal pores.
+Flux modeling addresses this issue derives the flux-based critical levels ($CLe_{f}$) \parencite{mills:2007aa}.  
+
+Four major studies have been undertaken that serve as the basepoint for studies of this type (and their resulting estimates): US National Crop Loss Assessment Network (1980s); the European Open Top Chamber Programme (EOTCP) (late 1980s to early 1990s), open-top chamber (OTC) experiments in Europe, and the Changing Climate and Potential Impact on Potato Yield and Quality (year?) \parencite{mills:2007aa}. 
+
+From the NCLAN and EOTCP data researchers identified a cumulative exposure threshold of 50-87 ppb in the United States and 35-60 ppb in Europe \parencite{mills:2007aa}.
+This work led to the use of the AOT40 measure, which is the lowest levels at which crop damage could be detected, in Europe, as the concentration based indicator of ozone damage to crops.
+
+AOT40 refers to the concentration of ozone accumulated over a threshold concentration of ozone, which us usually 30 or 40 ppb (i.e., AOT30 and AOT40, respectively). 
+AOTX is calculated as the sum of the differences between the hourly mean ozone level and \textit{'X'} for all daylight hours over a time-window, in which the hourly mean is greater than \textit{'X'} \parencite{mills:2007aa}.
+The units of AOTX are parts per billion per hour.\footnote{The mapping manual 'LRTAP Convention (2004)' has detailed description of how to calculate the AOTX.}
+One criticism of the concentration threshold approach is that it only considers the ozone levels at the top of the canopy, which directly led to work on an alternative measure (i.e., flux-based critical levels). 
+
+\cite{mills:2007aa} through a metaanlysis of over 700 published papers and proceedings found that crops can be separated into three statistically independent groups: ozone sensitive (i.e., wheat, water melon, pulses, cotton, turnip, tomato, onion, soybean, and lettuce), moderately sensitive (sugar beet, potato, oilseed rape, tobacoo, rice, maize, grape, and broccoli), and ozone resistant (i.e., barley and fruit (e.g. plum and strawberry)) \parencite{mills:2007aa}.  
+Wheat is the most sensitive crop to $O_{3}$ levels \parencite{mills:2007aa}. 
+
+\begin{landscape}
+\begin{table}
+\resizebox{\linewidth}{!}{%
+	\begin{tabularx}{1.2\linewidth}{l l l l l l l l}
+	\hline
+	Crop & Yield based on weight of & Critical level (ppm h, 3 months) & No. of cultivars & No. of points & Function & $r^2$ & References used \\
+	\hline
+	Watermelon & Fruit & 1.6 & 1 & 4 & y = -0.0321x + 0.97 & 0.94 & Gemino et al. (1999) \\
+	\end{tabularx}}
+\end{table}
+\end{landscape}
+
+\section{Data}
+Ozone monitoring networks are in place at many locations around the world; however, much of the coverage is in North America and Europe. 
+In 2016 \cite{sofen:2016aa} compiled, processed, and made publicly available an ozone dataset that spans 2200 high quality sites with over 200 million hourly observations for the period 1971-2015.
+The project released the data as gridded metrics on the monthly and annual timescales.
+Metrics available include the maximum daily 8-hour average, sum of means over 35 ppb, accumulated ozone exposure above a threshold of 40 ppb, etc. 
+More information on the complete list of metrics available can be found in \cite{sofen:2016aa}.
+
+For our analysis we use the 1\degree x 1\degree gridded AOT40 crop product, which is calculated as the accumulated ozone over a threshold of 40 ppb during the May to July growing season between the hours of 8:00 am and 2:00 pm \parencite{sofen:2016aa}.
+
+
+ 
+
+\printbibliography
+\end{document}

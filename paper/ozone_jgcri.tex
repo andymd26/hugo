@@ -8,8 +8,8 @@
 \usepackage{verbatimbox}
 \usepackage{float} % necessary for placement of figures
 \usepackage[style = authoryear, sorting = nyt, backend = biber]{biblatex}
-\addbibresource[location = local, type = file]{C:/Users/bloh356/Google Drive/Library/Library.bib}
-%\addbibresource[location = local, type = file]{/Users/bloh356/Google Drive/Library/Library.bib}
+%\addbibresource[location = local, type = file]{C:/Users/bloh356/Google Drive/Library/Library.bib}
+\addbibresource[location = local, type = file]{/Users/bloh356/Google Drive/Library/Library.bib}
 
 \title{$O_{3}$ task}
 \author{Andrew Blohm}
@@ -70,8 +70,19 @@ More information on the complete list of metrics available can be found in \cite
 
 For our analysis we use the 1\degree x 1\degree gridded AOT40 crop product, which is calculated as the accumulated ozone over a threshold of 40 ppb during the May to July growing season between the hours of 8:00 am and 2:00 pm \parencite{sofen:2016aa}.
 
+\cite{} investigate health impacts of ozone using simulations of future climate. 
+The \cite{j:2013aa} paper generated an annual average for PM2.5 and a 6-month (I assume growing season based) average of the 1-hour daily maximum ozone. 
+If I understand correctly these values were then averaged over four years. 
+The authors use the MOZART-4 global chemical transport model to simulate the level of ozone and PM2.5 in 2000, 2030, 2050, and 2100 using the Global GHG emission reduction in the Representative Concentration Pathway 4.5 (RCP4.5) scenario, as well as the associated reference scenario for the pathway.
+The authors use the AM3 model to incorporate the meterorological inputs from the global general circulation model simulations of RCP4.5.  
 
- 
+\cite{avnery:2013aa} use the Mozart-2 global chemical transport model to simulate and compare changes in surface ozone and resulting crop loss, as a result of future methane emissions to several mitigation alternatives (i.e., methane reduction and choosing crop varieties resistant to ozone). 
+
+The data was intended to be at the 2 degree x 2.5 degree grid but the calculations were messed up so we'd need to ask them what the grid size actually is. 
+
+
+\section{Methods}
+
 
 \printbibliography
 \end{document}

@@ -19,49 +19,103 @@
 \maketitle
 
 \section{Abstract}
+We model the effect of a marginal methane emission on agriculture production.
+We use the \ldots model to predict ozone levels under the RCP \ldots scenarios.
+
 
 \section{Introduction}
-Ozone ($O_{3}$) negatively effects plant growth and physiology, and subsequently, yields, as it causes injury, reduces photosynthesis, and, decreases plant productivity \parencite{mishra:2013aa}. 
-Two main approaches exist in the literature to quantify the impact of ozone on crops: concentration based critical levels (i.e., AOT40, W126, etc.), which capture the relationship between the cumulative dose over a threshold on the outcome variable, and flux models, which model the flux of ozone through the stomatal pores, also to identify critical levels of ozone \parencite{mills:2007aa}.\footnote{A third, less used model but mentioned here for completeness, is the maximum permissible ozone concentration (MPOC)\parencite{mills:2007aa}.}
-Observational evidence seems to support the idea that flux-based assessments do a better job of predicting ozone impacts, as compared to measures like AOT40 and W126 \parencite{avnery:2013ab}.
-However, (atleast as of 2013) the flux-based models are not yet suitable for global impact analysis \parencite{avnery:2013ab}. \footnote{The authors applied the AOT40 and W126 relationships developed for the US and Europe globally.} 
+Ozone ($O_{3}$) negatively affects plant growth and physiology, and subsequently, crop yields, as it causes injury, reduces photosynthesis, and, decreases plant productivity \parencite{mishra:2013aa}. 
+Two main approaches exist in the literature to quantify the impact of ozone on agriculture: concentration-based (i.e., AOT40, W126, etc.) that capture the relationship between the cumulative dose over a threshold on the crop damage, and stomatal flux models, which model the flux of ozone through the stomatal pores, also to identify critical levels of ozone \parencite{mills:2007aa}.\footnote{A third, less used model but mentioned here for completeness, is the maximum permissible ozone concentration (MPOC)\parencite{mills:2007aa}.}\footnote{The critical load and level concept came about as a result of the Convention on Long-range Transboundary Air Pollution (LRTAP-Convention) \parencite{clrtap:2015aa}.}\footnote{Concentration-based measures use the concentration of ozone at the plant canopy level and do not take into account the amount of ozone entering the plant.}
+Observational evidence appears to support the idea that flux-based assessments do a better job of predicting ozone impacts, as compared to measures like AOT40 and W126 \parencite{Avnery2013}.
+However, (atleast as of 2013) the flux-based models are not yet suitable for global impact analysis \parencite{Avnery2013}.
 
-The critical load and level concept, an effect-based approach to quantify the necessary level of reductions of atmospheric depositions, came about as a result of the Convention on Long-range Transboundary Air Pollution (LRTAP-Convention) \parencite{clrtap:2015aa}, whereby the critical levels are defined as the levels above which damage occurs \parencite{clrtap:2015aa}. 
-The approach uses the accumulated ozone above a threshold concentration (AOTX) for a certain time-window. 
-AOTX is calculated as the sum of the differences between the hourly mean ozone level and \textit{'X'} for all daylight hours over a time-window, in which the hourly mean is greater than \textit{'X'} \parencite{mills:2007aa}.
-One criticism of the concentration threshold approach is that it only considers the ozone levels at the top of the canopy, which directly led to work on an alternative measure (i.e., flux-based critical levels).
-Flux modeling addresses this issue, by deriving the flux-based critical levels ($CLe_{f}$) \parencite{mills:2007aa}.
-
-Four major studies have been undertaken to identify the critical cumulative ozone exposure levels and dose response for agriculture: the US National Crop Loss Assessment Network (NCLAN) (1980s); the European Open Top Chamber Programme (EOTCP) (late 1980s to early 1990s); the open-top chamber (OTC) experiments in Europe; and the Changing Climate and Potential Impact on Potato Yield and Quality (year?) \parencite{mills:2007aa}. 
+Four major studies provide much of the data on the response of agriculture to cumulative ozone exposure levels in the United States and Europe: the US National Crop Loss Assessment Network (NCLAN) (1980s); the European Open Top Chamber Programme (EOTCP) (late 1980s to early 1990s); the open-top chamber (OTC) experiments in Europe; and the Changing Climate and Potential Impact on Potato Yield and Quality (year?) \parencite{mills:2007aa}. 
 From the NCLAN and EOTCP data researchers identified a cumulative exposure threshold of 50-87 ppb in the United States and 35-60 ppb in Europe \parencite{mills:2007aa}.
-This work led to the use of the AOT40 measure, which is the lowest levels at which crop damage could be detected, in Europe, as the concentration based indicator of ozone damage to crops. 
+The AOT40 measure came to be favored in Europe, as the lowest concentration based measure at which crop damage could be detected. \footnote{The AOT measure represents the accumulated ozone above a threshold concentration (AOTX) for a certain time-window. 
+AOTX is calculated as the sum of the differences between the hourly mean ozone level and \textit{'X'} for all daylight hours over a time-window in which the hourly mean is greater than \textit{'X'} \parencite{mills:2007aa}.}
+\footnote{One criticism of the concentration threshold approach is that it only considers the ozone levels at the top of the canopy, which directly led to work on an alternative measure (i.e., flux-based critical levels).
+Flux modeling addresses this issue, by deriving the flux-based critical levels ($CLe_{f}$) \parencite{mills:2007aa}.}
+ 
+\cite{mills:2007aa} calculated yield response data for wheat and tomato using data from some of the open-top experiments mentioned previously.
+For other crops the authors conducted a metaanlysis of over 700 published papers and proceedings.
+Using a linear regression the authors then determined the relationship between the relative yield and cumulative ozone during the growing season (i.e., AOT40).
+\cite{mills:2007aa} found that crops can be separated into three statistically independent groups: ozone sensitive (i.e., wheat, water melon, pulses, cotton, turnip, tomato, onion, soybean, and lettuce), moderately sensitive (sugar beet, potato, oilseed rape, tobacco, rice, maize, grape, and broccoli), and ozone resistant (i.e., barley and fruit (e.g. plum and strawberry)) \parencite{mills:2007aa}. 
+The results of their work can be seen in Table \ref{} below.  
 
-\cite{mills:2007aa} through a metaanlysis of over 700 published papers and proceedings found that crops can be separated into three statistically independent groups: ozone sensitive (i.e., wheat, water melon, pulses, cotton, turnip, tomato, onion, soybean, and lettuce), moderately sensitive (sugar beet, potato, oilseed rape, tobacoo, rice, maize, grape, and broccoli), and ozone resistant (i.e., barley and fruit (e.g. plum and strawberry)) \parencite{mills:2007aa}.  
-Wheat is the most sensitive crop to $O_{3}$ levels \parencite{mills:2007aa}. 
+There is a small set of literature dedicated to quantifying the impacts of ozone on agricultural production at the level of global impacts predominantly in the face of a changing climate, as well as in response to mitigation alternatives undertaken to reduce the impacts of climate change. 
+\cite{Lapina2015} model the effect of foreign ozone sources on local ozone levels in the Western United States under several RCP pathways while also explicitly considering the effect of methane emissions on ozone levels. 
+\cite{Tai2014} model both the effect of future climate on agriculture through agro-climate variables (i.e., growing and killing degree days), as well as the detrimental effect of ozone.\footnote{The authors used four ozone exposure indices: AOT40, SUM06, W126, and M7 or M12. A constrained linear regression is used to determine the regional relationship between these variables and historical observations while also controlling for the correlation between high temperatures and ozone levels. The projections exclude the potential effect of $CO_2$ on global crop production.}  
+\cite{Avnery2013} investigate two mitigation alternatives to reduce the expected agricultural losses to ozone level: methane emission reduction and reducing crop damage through the use of more ozone resilient varieties.
+\cite{Wang2004} \ldots
 
-There is a small literature attempting to quantify the impacts of ozone on agricultural production at the level of global impacts. 
-Changes in ozone can be estimated using either a chemical transport model or using source-receptor relationships established through an adjoint model. 
+In this work we estimate the contribution of an additional ton of methane on global agriculture production using the predicted hourly ozone levels from the \ldots model under the Representative Concentration Pathways (RCP) \ldots
+Methane is a long-lived and globally mixed greenhouse gas \parencite{}.
+Pre-industrial tropospheric concentrations of methane averaged approximately 700 ppb however, concentrations have increased significantly, with recent estimates of approximately 1800 ppb \parencite{}.\footnote{The atmospheric lifetime of methane is approximately 12 years \parencite{}(IPCC, 2001). However, the increasing abundance of methane in the atmosphere is increasing the atmospheric lifetime of methane \parencite{}(Prather et al., 1995; Schimel et al., 1996).}
+The previous literature has examined global impacts of ozone on agriculture, including the role of methane in ozone production, but it has not investigated the marginal effect of methane on global agriculture. 
+We incorporate the following sources of uncertainty in our analysis \ldots
+
+ 
+
+
+\section{Data}
+In this section we introduce the data used in the modeling of the impact of ozone on global agriculture. 
+
+Agricultural planting and harvesting dates vary across the world, which affects the calculation of ozone exposure since it only matters during the growing season.
+In previous work, \cite{} (Waldhoff et al., 2016) compiled crop calendars to produce a response surface for investigating crop yields using different global climate models (GCMs) and climate scenarios.
+The planting season information was derived from SAGE, which includes both the planting and harvesting dates for a variety of crops around the world.
+The authors aggregated the crop calendars to the country level by weighting country level production. 
+More information on the data processing can be found \ldots [insert either a reference or supplemental material].
+[If the reference isn't going to be published then we could introduce the data cleaning material as supplemental material for this article.] 
+
+Agriculture yields \ldots
+Are we going to estimate agriculture production? Reference a change from a base year (holding certain factors constant)?
+
+
+
+
+
+\section{Methods}
+Ozone data for modeling the global impacts on agriculture has predominantly come from global chemical transport models though in some studies adjoint models are being used to establish source-receptor relationships. 
 The chemical transport model can be computationally expensive given the need to run the model for each representative concentration pathway scenario.
-Whereby the adjoint model can estimate the necessary variables for multiple scenarios during one model run \parencite{lapina:2015aa}.
-The adjoint model establishes the sensitivities (i.e., a fractional response to a pertubation in the source at a particular location) of a particular receptor metric to parameters of the chemical transport model (i.e., ozone, emissions, etc.).
-The authors assume that the response is time invariant, which means that to determine a future sensitivity per fractional change in emissions only requires an understanding of how the emission levels change \parencite{lapina:2015aa}.
-The authors used the Hemispheric Transport of Air Pollution (HTAP) study to estimate the W126 response to changing levels of methane.
+An adjoint model can estimate the necessary variables for multiple scenarios during one model run by estimating the sensitivities (i.e., a fractional response to a pertubation in the source at a particular location) of a particular receptor metric to parameters of the chemical transport model (i.e., ozone, emissions, etc.)\parencite{Lapina2015}.
 
-\cite{tai:2014aa} use the Community Earth System Model (CESM) to simulate hourly temperature and ozone concentrations consistent with representative concentration pathway (RCP) scenarios 4.5 and 8.5 for present day and 2050.\footnote{Employed a coupled atmosphere and land components with fixed data ocean and cryosphere consistent with current and future climates at a resolution of 1.9\degree by 2.5\degree.}
-The authors model both the effect of future climate on agriculture through agro-climate variables (i.e., growing and killing degree days), as well as the detrimental effect of ozone.\footnote{The authors used four ozone exposure indices: AOT40, SUM06, W126, and M7 or M12. A constrained linear regression is used to determine the regional relationship between these variables and historical observations while also controlling for the correlation between high temperatures and ozone levels. The projections exclude the potential effect of $CO_2$ on global crop production.}  
+\cite{Tai2014} use the Community Earth System Model (CESM) to simulate hourly temperature and ozone concentrations consistent with representative concentration pathway (RCP) scenarios 4.5 and 8.5 for present day and 2050.\footnote{Employed a coupled atmosphere and land components with fixed data ocean and cryosphere consistent with current and future climates at a resolution of 1.9\degree by 2.5\degree.}
+\cite{Tai2014} model both the effect of future climate on agriculture through agro-climate variables (i.e., growing and killing degree days), as well as the detrimental effect of ozone.\footnote{The authors used four ozone exposure indices: AOT40, SUM06, W126, and M7 or M12. A constrained linear regression is used to determine the regional relationship between these variables and historical observations while also controlling for the correlation between high temperatures and ozone levels. The projections exclude the potential effect of $CO_2$ on global crop production.}  
 
-\cite{lapina:2015aa} use GEOS-Chem adjoint to calculate regional W126 concentrations using the RCP emissions pathways and source-receptor relationships for multiple RCP scenarios as calculated through the GEOS-Chem adjoint model \footnote{The source-receptor relationship, as estimated through adjoint models, is less computationally intensive as compared to chemical transport models because the relationship can be established for multiple emission sources during a single adjoint model run \parencite{lapina:2015aa}. The model uses the GEOS-5 assimilated meteorology with 2\degree by 2.5\degree resolution and 47 vertical levels}.
-The authors also consider the impacts of changes in methane emissions on ozone levels.
+\cite{Avnery2013} use the Mozart-2 global chemical transport model to simulate and compare changes in surface ozone and resulting crop loss, as a result of future methane emissions to several mitigation alternatives under current legislation (CLE) and reduced methane scenarios (i.e., methane reduction and choosing crop varieties resistant to ozone). 
+NCEP reanalysis is used for the meteorological fields to drive the simulations with a resolution of 1.9\degree by 1.9\degree horizontal resolution and 28 vertical levels \parencite{Avnery2013}.
+The authors use the W126 and AOT40 measures. \footnote{The authors applied the AOT40 and W126 relationships developed for the US and Europe globally.} 
 
-\cite{avnery:2013ab} investigate two mitigation alternatives to reduce the expected agricultural losses to ozone level: methane emission reduction and reducing crop damage through the use of more ozone resilient varieties.
-The authors use the Mozart-2 global chemical transport model to simulate and compare changes in surface ozone and resulting crop loss, as a result of future methane emissions to several mitigation alternatives under current legislation (CLE) and reduced methane scenarios (i.e., methane reduction and choosing crop varieties resistant to ozone). 
-NCEP reanalysis is used for the meteorological fields to drive the simulations with a resolution of 1.9\degree by 1.9\degree horizontal resolution and 28 vertical levels \parencite{avnery:2013ab}.
-The authors use the W126 and AOT40 measures.
-
-\cite{wang:2004aa} use MOZART-2 to simulate ozone levels for the period 1990 to 2020. 
-The model is driven by meteorological inputs from the GCM Middle Atmosphere Community Climate Model Version 3 (MACCM3) and has a horizontal resolution of 2.8\degree by 2.8\degree and includes 24 vertical levels \parencite{wang:2004aa}. 
+\cite{Wang2004} use MOZART-2 to simulate ozone levels for the period 1990 to 2020. 
+The model is driven by meteorological inputs from the GCM Middle Atmosphere Community Climate Model Version 3 (MACCM3) and has a horizontal resolution of 2.8\degree by 2.8\degree and includes 24 vertical levels \parencite{Wang2004}. 
 Emissions projections are derived from the historical record and the IPCC B2-Message scenario. 
 
+\cite{Lapina2015} use GEOS-Chem adjoint to calculate regional W126 concentrations using the RCP emissions pathways and source-receptor relationships for multiple RCP scenarios as calculated through the GEOS-Chem adjoint model \footnote{The source-receptor relationship, as estimated through adjoint models, is less computationally intensive as compared to chemical transport models because the relationship can be established for multiple emission sources during a single adjoint model run \parencite{Lapina2015}. The model uses the GEOS-5 assimilated meteorology with 2\degree by 2.5\degree resolution and 47 vertical levels}.
+The authors assume that the response is time invariant, which means that to determine a future sensitivity per fractional change in emissions only requires an understanding of how the emission levels change \parencite{Lapina2015}.
+The authors used the Hemispheric Transport of Air Pollution (HTAP) study to estimate the W126 response to changing levels of methane.
+The authors also consider the impacts of changes in methane emissions on ozone levels.
+
+\cite{West2013} investigated ozone impacts on human health using the MOZART-4 global chemical transport model to simulate the level of ozone and PM2.5 in 2000, 2030, 2050, and 2100 using the Global GHG emission reduction in the Representative Concentration Pathway 4.5 (RCP4.5) scenario, as well as the associated reference scenario for the pathway. 
+The authors use the AM3 model to incorporate the meteorological inputs from the global general circulation model simulations of RCP4.5.  
+
+
+
+
+
+
+
+The Global Change Assessment Model is an integrated assessment model for exploring the consequences and responses to climate change \parencite{}.
+At present the GCAM has the following crops: wheat, corn, rice, barley, rye, millet, sorghum, soybeans, sunflower, potatoes, cassava, sugar cane, sugar beet, oil palm, rape see/canola, groundnuts/peanuts, pulses, citrus, date palm, grapes/vine, cotton, cocoa, coffee, others perennial, fodder grasses, and others annual \parencite{}. 
+
+
+\section{Cut or homeless pieces}
+Ozone monitoring networks are in place at many locations around the world; however, much of the coverage is in North America and Europe. 
+In 2016 \cite{sofen:2016aa} compiled, processed, and made publicly available an ozone dataset that spans 2200 high quality sites with over 200 million hourly observations for the period 1971-2015.
+The project released the data as gridded metrics on the monthly and annual timescales.
+Metrics available include the maximum daily 8-hour average, sum of means over 35 ppb, accumulated ozone exposure above a threshold of 40 ppb, etc. 
+More information on the complete list of metrics available can be found in \cite{sofen:2016aa}.
+
+For our analysis we use the 1\degree x 1\degree gridded AOT40 crop product, which is calculated as the accumulated ozone over a threshold of 40 ppb during the May to July growing season between the hours of 8:00 am and 2:00 pm \parencite{sofen:2016aa}.
 
 \begin{landscape}
 \begin{table}
@@ -75,31 +129,6 @@ Emissions projections are derived from the historical record and the IPCC B2-Mes
 \end{table}
 \end{landscape}
 
-\section{Data}
-Ozone monitoring networks are in place at many locations around the world; however, much of the coverage is in North America and Europe. 
-In 2016 \cite{sofen:2016aa} compiled, processed, and made publicly available an ozone dataset that spans 2200 high quality sites with over 200 million hourly observations for the period 1971-2015.
-The project released the data as gridded metrics on the monthly and annual timescales.
-Metrics available include the maximum daily 8-hour average, sum of means over 35 ppb, accumulated ozone exposure above a threshold of 40 ppb, etc. 
-More information on the complete list of metrics available can be found in \cite{sofen:2016aa}.
-
-For our analysis we use the 1\degree x 1\degree gridded AOT40 crop product, which is calculated as the accumulated ozone over a threshold of 40 ppb during the May to July growing season between the hours of 8:00 am and 2:00 pm \parencite{sofen:2016aa}.
-
-\cite{} investigate health impacts of ozone using simulations of future climate. 
-The \cite{j:2013aa} paper generated an annual average for PM2.5 and a 6-month (I assume growing season based) average of the 1-hour daily maximum ozone. 
-If I understand correctly these values were then averaged over four years. 
-The authors use the MOZART-4 global chemical transport model to simulate the level of ozone and PM2.5 in 2000, 2030, 2050, and 2100 using the Global GHG emission reduction in the Representative Concentration Pathway 4.5 (RCP4.5) scenario, as well as the associated reference scenario for the pathway.
-The authors use the AM3 model to incorporate the meterorological inputs from the global general circulation model simulations of RCP4.5.  
-
-
-
-The data was intended to be at the 2 degree x 2.5 degree grid but the calculations were messed up so we'd need to ask them what the grid size actually is. 
-
-
-\section{Methods}
-Where to get the ozone data?
-We could use the CMIP5 data.
-But its not clear if we should only use the models with interactive chemistry, or include all of them (i.e., those with time-varying ozone) \parencite{eyring2013long}.
-In CMIP3 stratospheric ozone projections were not time-varying. 
 
 \printbibliography
 \end{document}
